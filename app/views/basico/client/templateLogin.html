@@ -1,0 +1,44 @@
+<template name="templateLoginSistema">
+    <div class="page login-page">
+        <div class="container d-flex align-items-center">
+            <div class="form-holder has-shadow">
+                <div class="row">
+                    <!-- Logo & Information Panel-->
+                    <div class="col-lg-6">
+                        <div class="info d-flex align-items-center">
+                            <div class="content">
+                                <div class="logo">
+                                    <h1>EasyFesta</h1>
+                                </div>
+                                <p>Gerencie o seu evento!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Form Panel    -->
+                    <div class="col-lg-6 bg-white">
+                        <div class="form d-flex align-items-center">
+                            <div class="content">
+                                <form id="formLogin" method="post">
+                                    <div class="form-group">
+                                        <input id="login-username" type="text" name="loginUsername" required="" class="input-material">
+                                        <label for="login-username" class="label-material">E-mail</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <input id="login-password" type="password" name="loginPassword" required="" class="input-material">
+                                        <label for="login-password" class="label-material">Senha</label>
+                                    </div>
+                                    <a  class="btn btn-primary fazerLogin">Login</a>
+                                    <!-- This should be submit button but I replaced it with <a> for demo purposes-->
+                                </form>
+                                <a href="#" class="forgot-pass">Esqueceu sua senha?</a>
+                                <br>
+                                <small>Não tem uma conta? </small>
+                                <a href="/criarconta" class="signup">Criar conta</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

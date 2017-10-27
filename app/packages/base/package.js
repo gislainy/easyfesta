@@ -13,6 +13,7 @@ Package.describe({
 Package.onUse(function (api) {
   api.versionsFrom('1.5.2.2');
   api.use('ecmascript');
+  api.use('service-configuration');
   api.use('ui');
   api.use('aldeed:collection2');
   api.use('mongo');
@@ -28,6 +29,19 @@ Package.onUse(function (api) {
   api.addFiles ('visual/tether.css', 'client'); 
   api.addFiles ('visual/bootstrap.css', 'client'); 
   api.addFiles ('visual/bootstrap.js', 'client'); 
+  api.addFiles ('visual/jquery.cookie.js', 'client'); 
+  api.addFiles ('visual/jquery.validate.min.js', 'client');
+  
+  
+
+  api.addFiles ('config/accounts.js', 'server'); 
+  api.addFiles ('config/social-accounts.js', 'server'); 
+  api.addFiles ('config/email.js', 'server'); 
+
+
+
+
+  api.addFiles ('soa/soa-usuario.js', 'server'); 
   api.export([
     'App',
     'appDeclareCollection',

@@ -1,0 +1,49 @@
+<template name="templateCriarConta">
+	<div class="page login-page">
+		<div class="container d-flex align-items-center">
+			<div class="form-holder has-shadow">
+				<div class="row">
+					<!-- Logo & Information Panel-->
+					<div class="col-lg-6">
+						<div class="info d-flex align-items-center">
+							<div class="content">
+								<div class="logo">
+									<h1>EasyFesta</h1>
+								</div>
+								<p>Cria sua conta no EasyFesta e desfrute de todas as nossas funcionalidades para o seu evento!</p>
+							</div>
+						</div>
+					</div>
+					<!-- Form Panel    -->
+					<div class="col-lg-6 bg-white">
+						<div class="form d-flex align-items-center">
+							<div class="content">
+								<form id="register-form">
+									<div class="form-group">
+										<input id="register-username" type="text" name="registerUsername" required class="input-material">
+										<label for="register-username" class="label-material">Nome</label>
+									</div>
+									<div class="form-group">
+										<input id="register-email" type="email" name="registerEmail" required class="input-material">
+										<label for="register-email" class="label-material">Email</label>
+									</div>
+									<div class="form-group">
+										<input id="register-passowrd" type="password" name="registerPassword" required class="input-material">
+										<label for="register-passowrd" class="label-material">password </label>
+									</div>
+									<div class="form-group terms-conditions">
+										<input id="license" type="checkbox" class="checkbox-template">
+										<label for="license">Aceito os termos de privacidade</label>
+									</div>
+									<input type="button" value="Criar uma conta" class="btn btn-primary criarUmaConta">
+								</form>
+								<small>Já possui uma conta? </small>
+								<a href="/" class="signup">Login</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</template>
