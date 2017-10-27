@@ -1,5 +1,5 @@
 /*! tether 1.4.0 */
-
+app_Tether;
 (function(root, factory) {
     if (typeof define === 'function' && define.amd) {
       define(factory);
@@ -1806,6 +1806,9 @@
       return { top: top, left: left };
     }
   });
+  app_Tether = Tether;
   return Tether;
   
   }));
+
+  Tether = app_Tether;

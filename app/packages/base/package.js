@@ -23,8 +23,11 @@ Package.onUse(function (api) {
   api.use('accounts-google');
   api.use('reywood:publish-composite');
   api.mainModule('base.js');
-  api.addFiles ('tether/tether.js'); 
-  api.addFiles ('tether/tether.css'); 
+  api.addFiles ('visual/jquery.js', 'client'); 
+  api.addFiles ('visual/tether.js', 'client'); 
+  api.addFiles ('visual/tether.css', 'client'); 
+  api.addFiles ('visual/bootstrap.css', 'client'); 
+  api.addFiles ('visual/bootstrap.js', 'client'); 
   api.export([
     'App',
     'appDeclareCollection',
